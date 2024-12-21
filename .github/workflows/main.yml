@@ -1,26 +1,24 @@
 jobs:
   build:
-
-  runs-on: ubuntu-latest
-
-  steps:  
-  - uses: actions/checkout@v1
-  - name: Zip resourcepack
-  - run: |
-      cd resourcepack
-      zip -r resourcepack.zip *
-      mv resourcepack.zip ../resourcepack.zip
-  - name: Generate SHA1
-  - run: sha1sum resoucepack.zip | awk '{print $1}' | awk '{$1=$1}1' > sha1
-  - name: switching from HTTPS to SSH
-    run: git remote set-url origin ${{ secrets.ssh }}
-  - name: check for changes
-    run: git status
-  - name: stage changed files
-    run: git add .
-  - name: commit changed files
-    run: git commit -m "Resourcepack auto release"
-  - name: fetch from master
-    run: git fetch origin master
-  - name: push code to master
-    run: git push origin HEAD:master
+    runs-on: ubuntu-latest
+    steps:  
+    - uses: actions/checkout@v1
+    - name: Zip resourcepack
+      run: |
+        cd resourcepack
+        zip -r resourcepack.zip *
+        mv resourcepack.zip ../resourcepack.zip
+    - name: Generate SHA1
+      run: sha1sum resoucepack.zip | awk '{print $1}' | awk '{$1=$1}1' > sha1
+    - name: switching from HTTPS to SSH
+      run: git remote set-url origin ${{ secrets.ssh }}
+    - name: check for changes
+      run: git status
+    - name: stage changed files
+      run: git add .
+    - name: commit changed files
+      run: git commit -m "Resourcepack auto release"
+    - name: fetch from master
+      run: git fetch origin master
+    - name: push code to master
+      run: git push origin HEAD:master
