@@ -21,9 +21,8 @@ jobs:
       run: |
         cd resourcepack
         zip -r resourcepack.zip *
-        mv resourcepack.zip /resourcepack.zip
     - name: Generate SHA1
-      run: sha1sum /resoucepack.zip | awk '{print $1}' | awk '{$1=$1}1' > sha1
+      run: sha1sum resoucepack.zip | awk '{print $1}' | awk '{$1=$1}1' > sha1
     - name: switching from HTTPS to SSH
       run: git remote set-url origin ${{ secrets.ssh }}
     - name: check for changes
