@@ -30,7 +30,5 @@ jobs:
       run: git add .
     - name: commit changed files
       run: git commit -m "Resourcepack auto release"
-    - name: fetch from master
-      run: git fetch origin master
     - name: push code to master
       run: git push origin HEAD:master
