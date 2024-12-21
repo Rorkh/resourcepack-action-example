@@ -2,9 +2,9 @@ name: Resourcepack CI
 
 on:
   push:
-    branches: ["resourcepack"]
+    branches: ["main"]
   pull_request:
-    branches: ["resourcepack"]
+    branches: ["main"]
 
 jobs:
   build:
@@ -33,4 +33,4 @@ jobs:
     - name: commit changed files
       run: git commit -m "Resourcepack auto release"
     - name: push code to main
-      run: git push origin HEAD:refs/heads/main
+      run: git push origin HEAD:refs/heads/resourcepack
