@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "file": "minecraft:hud/coin.png",
+            "chars": [
+                "\u0001"
+            ],
+            "height": 16,
+            "ascent": -14,
+            "type": "bitmap"
+        }
+    ]
+}

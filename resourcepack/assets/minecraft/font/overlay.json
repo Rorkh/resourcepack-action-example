@@ -1,0 +1,58 @@
+{
+    "providers": [
+        {
+            "file": "minecraft:crafting.png",
+            "chars": [
+                "\u0001"
+            ],
+            "height": 135,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+        {
+            "file": "minecraft:titled_shop.png",
+            "chars": [
+                "\u0003"
+            ],
+            "height": 135,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+        {
+            "file": "minecraft:test.png",
+            "chars": [
+                "\u0004"
+            ],
+            "height": 135,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+        {
+            "file": "minecraft:mana/filled.png",
+            "chars": [
+                "\u0005"
+            ],
+            "height": 9,
+            "ascent": -14,
+            "type": "bitmap"
+        },
+        {
+            "file": "minecraft:mana/empty.png",
+            "chars": [
+                "\u0006"
+            ],
+            "height": 9,
+            "ascent": 9,
+            "type": "bitmap"
+        },
+        {
+          "file": "minecraft:pixel.png",
+          "chars": [
+            "\u0002"
+          ],
+          "height": -3,
+          "ascent": -2147483648,
+          "type": "bitmap"
+        }
+    ]
+}

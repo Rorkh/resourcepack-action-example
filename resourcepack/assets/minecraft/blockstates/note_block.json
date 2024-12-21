@@ -1,0 +1,20 @@
+{
+    "multipart":[
+        {
+            "apply": {
+                "model": "minecraft:block/note_block"
+            }
+        },
+        
+        {
+           "when":{
+              "instrument":"bell",
+              "note":0,
+              "powered":false
+           },
+           "apply":{
+              "model":"minecraft:block/rainbow_block"
+           }
+        }
+     ]
+}

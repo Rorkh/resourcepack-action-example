@@ -1,0 +1,6 @@
+{
+  "parent": "merrawin:scythe/greatscythe",
+  "textures": {
+    "layer0": "merrawin:item/diamond_greatscythe"
+  }
+}

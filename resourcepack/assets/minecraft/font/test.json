@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "file": "minecraft:empty.png",
+            "chars": [
+                "\u0001"
+            ],
+            "height": 230,
+            "ascent": 13,
+            "type": "bitmap"
+        }
+    ]
+}

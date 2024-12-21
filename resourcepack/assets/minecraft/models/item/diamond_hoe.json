@@ -1,0 +1,53 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_hoe"
+	},
+	"overrides": [
+		{ "predicate": {"custom_model_data":1}, "model": "item/slots/helmet"},
+		{ "predicate": {"custom_model_data":2}, "model": "item/slots/chestplate"},
+		{ "predicate": {"custom_model_data":3}, "model": "item/slots/leggings"},
+		{ "predicate": {"custom_model_data":4}, "model": "item/slots/boots"},
+		
+		{ "predicate": {"custom_model_data":5}, "model": "item/slots/amulet"},
+		{ "predicate": {"custom_model_data":6}, "model": "item/slots/bracelet"},
+		{ "predicate": {"custom_model_data":7}, "model": "item/slots/ring1"},
+		{ "predicate": {"custom_model_data":8}, "model": "item/slots/ring2"},
+		
+		{ "predicate": {"custom_model_data":9}, "model": "item/slots/gloves"},
+		{ "predicate": {"custom_model_data":10}, "model": "item/slots/artifact1"},
+		{ "predicate": {"custom_model_data":11}, "model": "item/slots/artifact2"},
+		{ "predicate": {"custom_model_data":12}, "model": "item/slots/artifact3"},
+		
+		{ "predicate": {"custom_model_data":13}, "model": "item/slots/mainhand"},
+		{ "predicate": {"custom_model_data":14}, "model": "item/slots/offhand"},
+		
+		{ "predicate": {"custom_model_data":15}, "model": "item/slots/fill"},
+		{ "predicate": {"custom_model_data":16}, "model": "item/slots/compass"},
+		{ "predicate": {"custom_model_data":17}, "model": "item/slots/settings"},
+		{ "predicate": {"custom_model_data":18}, "model": "item/slots/info"},
+		{ "predicate": {"custom_model_data":19}, "model": "item/slots/equipment"},
+		{ "predicate": {"custom_model_data":20}, "model": "item/slots/skills"},
+		{ "predicate": {"custom_model_data":21}, "model": "item/slots/stats"},
+
+		{ "predicate": {"custom_model_data":50}, "model": "item/slots/fill_border_right"},
+		{ "predicate": {"custom_model_data":51}, "model": "item/slots/fill_border_left"},
+		{ "predicate": {"custom_model_data":52}, "model": "item/slots/fill_border_up"},
+		{ "predicate": {"custom_model_data":53}, "model": "item/slots/fill_border_down"},
+
+		{ "predicate": {"custom_model_data":54}, "model": "item/slots/fill_border_center"},
+		{ "predicate": {"custom_model_data":55}, "model": "item/slots/fill_border_centerv"},
+
+		{ "predicate": {"custom_model_data":61}, "model": "item/slots/fill_rect"},
+		{ "predicate": {"custom_model_data":62}, "model": "item/slots/fill_rect_gray"},
+		{ "predicate": {"custom_model_data":63}, "model": "item/slots/fill_rect_aqua"},
+		{ "predicate": {"custom_model_data":64}, "model": "item/slots/fill_rect_blue"},
+
+		{ "predicate": {"custom_model_data":70}, "model": "item/misc/amulet"},
+		{ "predicate": {"custom_model_data":71}, "model": "item/misc/silver_ring"},
+		{ "predicate": {"custom_model_data":72}, "model": "item/misc/golden_ring"},
+		{ "predicate": {"custom_model_data":73}, "model": "item/misc/soul_shard"},
+		{ "predicate": {"custom_model_data":74}, "model": "item/misc/soul_fragment"},
+		{ "predicate": {"custom_model_data":125}, "model": "merrawin:scythe/diamond_greatscythe"}
+	]
+}

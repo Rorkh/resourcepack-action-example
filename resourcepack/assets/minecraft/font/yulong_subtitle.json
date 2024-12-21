@@ -1,0 +1,11 @@
+{
+    "providers": [
+        {
+            "file": "minecraft:yulong.ttf",
+            "shift": [0, -26],
+ 			"size": 15.0,
+ 			"oversample": 4.0,
+            "type": "ttf"
+        }
+    ]
+}
