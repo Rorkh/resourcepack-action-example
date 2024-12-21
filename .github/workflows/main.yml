@@ -2,9 +2,9 @@ name: Resourcepack CI
 
 on:
   push:
-    branches: ["main"]
+    branches: ["resourcepack"]
   pull_request:
-    branches: ["main"]
+    branches: ["resourcepack"]
 
 jobs:
   build:
