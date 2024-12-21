@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:  
     - uses: actions/checkout@v1
+    - name: Set identity
+      run:  |
+        git config --global user.email "rorkh@internet.ru"
+        git config --global user.name "Rorkh"
     - name: Zip resourcepack
       run: |
         cd resourcepack
