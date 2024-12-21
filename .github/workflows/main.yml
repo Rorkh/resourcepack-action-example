@@ -21,10 +21,9 @@ jobs:
       run: |
         cd resourcepack
         zip -r resourcepack.zip *
+        mv resourcepack.zip ../resourcepack.zip
     - name: Generate SHA1
-      run: |
-        cd resourcepack
-        sha1sum resoucepack.zip | awk '{print $1}' | awk '{$1=$1}1' > sha1
+      run: sha1sum resoucepack.zip | awk '{print $1}' | awk '{$1=$1}1' > sha1
     - name: switching from HTTPS to SSH
       run: git remote set-url origin ${{ secrets.ssh }}
     - name: check for changes
@@ -33,5 +32,4 @@ jobs:
       run: git add .
     - name: commit changed files
       run: git commit -m "Resourcepack auto release"
-    - name: push code to master
-      run: git push origin HEAD:refs/heads/master
+
