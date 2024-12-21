@@ -34,4 +34,4 @@ jobs:
     - name: commit changed files
       run: git commit -m "Resourcepack auto release"
     - name: push code to master
-      run: git push origin HEAD:master
+      run: git push origin HEAD:refs/heads/master
